@@ -11,4 +11,4 @@ The main aim of this blog creating is to strengthen my understanding of the foll
 3. Render information unto client side with HTML templates
 4. HTML and CSS concepts
 
-![picture](PythonDjangoBlog/screenshots/blog.png)
+![picture](pythondjangoblog/screenshots/blog.png)
