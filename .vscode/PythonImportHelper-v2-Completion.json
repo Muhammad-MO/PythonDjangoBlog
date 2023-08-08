@@ -32,6 +32,14 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -40,11 +48,52 @@
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
         "documentation": {}
     },
     {
@@ -61,6 +110,22 @@
         "description": "django.contrib",
         "isExtraImport": true,
         "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "Comments",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
         "documentation": {}
     },
     {
@@ -80,7 +145,23 @@
         "documentation": {}
     },
     {
+        "label": "Comments",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
         "label": "Post",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comments",
         "importPath": "app.models",
         "description": "app.models",
         "isExtraImport": true,
@@ -96,11 +177,35 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "onclick",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
         "label": "slugify",
         "importPath": "django.utils.text",
         "description": "django.utils.text",
         "isExtraImport": true,
         "detail": "django.utils.text",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -144,6 +249,14 @@
         "documentation": {}
     },
     {
+        "label": "CommentForm",
+        "importPath": "app.forms",
+        "description": "app.forms",
+        "isExtraImport": true,
+        "detail": "app.forms",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -166,14 +279,6 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -220,12 +325,39 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "app.migrations.0003_post_view_count",
+        "description": "app.migrations.0003_post_view_count",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('app', '0002_tag_post_tags'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='post',\n            name='view_count',\n            field=models.IntegerField(blank=True, null=True),\n        ),",
+        "detail": "app.migrations.0003_post_view_count",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "app.migrations.0004_comments",
+        "description": "app.migrations.0004_comments",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('app', '0003_post_view_count'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Comments',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "app.migrations.0004_comments",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "kind": 6,
         "importPath": "app.apps",
         "description": "app.apps",
         "peekOfCode": "class AppConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'app'",
         "detail": "app.apps",
+        "documentation": {}
+    },
+    {
+        "label": "CommentForm",
+        "kind": 6,
+        "importPath": "app.forms",
+        "description": "app.forms",
+        "peekOfCode": "class CommentForm(forms.ModelForm):\n    class Meta:\n        model = Comments\n        fields = {'content', 'email', 'name', 'website'}\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        self.fields['content'].widget.attrs['placeholder'] = 'Type your comment...'\n        self.fields['email'].widget.attrs['placeholder'] = 'Type your email...'\n        self.fields['name'].widget.attrs['placeholder'] = 'Type your name...'\n        self.fields['website'].widget.attrs['placeholder'] = 'Type your website...'",
+        "detail": "app.forms",
         "documentation": {}
     },
     {
@@ -242,7 +374,16 @@
         "kind": 6,
         "importPath": "app.models",
         "description": "app.models",
-        "peekOfCode": "class Post(models.Model):\n    title = models.CharField(max_length=200)\n    content = models.TextField()\n    last_updated = models.DateTimeField(auto_now=True)\n    slug = models.SlugField(max_length=200, unique=True)\n    image = models.ImageField(null=True, blank=True, upload_to=\"images/\")\n    tags = models.ManyToManyField(Tag, blank=True, related_name='post')",
+        "peekOfCode": "class Post(models.Model):\n    title = models.CharField(max_length=200)\n    content = models.TextField()\n    last_updated = models.DateTimeField(auto_now=True)\n    slug = models.SlugField(max_length=200, unique=True)\n    image = models.ImageField(null=True, blank=True, upload_to=\"images/\")\n    tags = models.ManyToManyField(Tag, blank=True, related_name='post')\n    view_count = models.IntegerField(null=True, blank=True)\nclass Comments(models.Model):\n    content = models.TextField()",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comments",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Comments(models.Model):\n    content = models.TextField()\n    date = models.DateTimeField(auto_now=True)\n    name = models.CharField(max_length=200)\n    email = models.EmailField(max_length=200)\n    website = models.CharField(max_length=200)\n    post = models.ForeignKey(Post, on_delete=models.CASCADE)\n    author = models.ForeignKey(\n        User, on_delete=models.CASCADE, null=True, blank=True)",
         "detail": "app.models",
         "documentation": {}
     },
@@ -260,7 +401,7 @@
         "kind": 2,
         "importPath": "app.views",
         "description": "app.views",
-        "peekOfCode": "def index(request):\n    posts = Post.objects.all()\n    context = {'posts': posts}\n    return render(request, 'app/index.html', context)\ndef post_page(request, slug):\n    post = Post.objects.get(slug=slug)\n    context = {'post': post}\n    print('Helllo')\n    print(post)\n    return render(request, 'app/post.html', context)",
+        "peekOfCode": "def index(request):\n    posts = Post.objects.all()\n    context = {'posts': posts}\n    return render(request, 'app/index.html', context)\ndef post_page(request, slug):\n    post = Post.objects.get(slug=slug)\n    comments = Comments.objects.filter(post=post)\n    form = CommentForm()\n    if request.POST:\n        comment_form = CommentForm(request.POST)",
         "detail": "app.views",
         "documentation": {}
     },
@@ -269,7 +410,7 @@
         "kind": 2,
         "importPath": "app.views",
         "description": "app.views",
-        "peekOfCode": "def post_page(request, slug):\n    post = Post.objects.get(slug=slug)\n    context = {'post': post}\n    print('Helllo')\n    print(post)\n    return render(request, 'app/post.html', context)",
+        "peekOfCode": "def post_page(request, slug):\n    post = Post.objects.get(slug=slug)\n    comments = Comments.objects.filter(post=post)\n    form = CommentForm()\n    if request.POST:\n        comment_form = CommentForm(request.POST)\n        if comment_form.is_valid:\n            comment = comment_form.save(commit=False)\n            postid = request.POST.get('post_id')\n            post = Post.objects.get(id=postid)",
         "detail": "app.views",
         "documentation": {}
     },
