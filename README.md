@@ -12,3 +12,9 @@ The main aim of this blog creating is to strengthen my understanding of the foll
 4. HTML and CSS concepts
 
 ![picture](/screenshots/blog.png)
+
+# Resources
+
+1. Udemy
+2. W3 schools
+3. Stackoverflow
